@@ -1,0 +1,17 @@
+name: Hello
+on:
+   # События, которые запускают jobs
+    push:
+      branches: [ "master" ]
+jobs:
+    # Название job вы можете назвать как угодно
+    my_build_job:
+      # Операционная система в виртуальной машине, в которой запускаются процессы
+      runs-on: ubuntu-latest
+      defaults:
+        run:
+          working-directory: /home/admin/my_studies/scripts
+        # Шаги
+        steps:
+          - name: Run python script Hello.py
+            run: ./Hello.py
