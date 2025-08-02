@@ -13,4 +13,4 @@ jobs:
             with:
               python-version: '3.10'
           - name: Run python script Hello.py
-            run: /home/admin/my_studies/scripts/Hello.py
+            run: python /home/admin/my_studies/scripts/Hello.py
