@@ -13,7 +13,9 @@ jobs:
           working-directory: /home/admin/my_studies/scripts
         # Шаги
         steps:
-#          - name: Run python script Hello.py
- #           run: ./Hello.py
-           - name: Run a one-line script
-             run: echo Hello, world!
+          - name: Check out the repository to the runner
+            uses: actions/checkout@v4
+          - name: Run python script Hello.py
+            run: ./Hello.py
+          - name: Run a one-line script
+            run: echo Hello, world!
