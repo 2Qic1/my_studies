@@ -1,7 +1,7 @@
 name: Run Pethon Hello
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 jobs:
     my_build_job:
       runs-on: ubuntu-latest
