@@ -6,6 +6,8 @@ jobs:
     my_build_job:
       runs-on: ubuntu-latest
       steps:
+          - name: Install Python
+            run: sudo apt update && sudo apt install -y python3
           - name: Check out the repository to the runner
             uses: actions/checkout@v4
           - name: Set up Python
@@ -13,4 +15,4 @@ jobs:
             with:
               python-version: '3.10'
           - name: Run python script Hello.py
-            run: python3 /home/admin/my_studies/scripts/Hello.py
+            run: python3 scripts/Hello.py
