@@ -27,6 +27,6 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v2
         with:
-          context: ./14.Kubernetes_application_deployment
+          context: .
           push: true
           tags: jfrog.it-academy.by/public/jenkins-ci:qic
